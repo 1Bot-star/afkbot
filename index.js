@@ -41,10 +41,10 @@ function logToUser(user, msg) {
 }
 
 function launchBot(ipPort, botId) {
-  const [host, port] = ipPort.split(":");
+  const [host, port] = ipPort.split("Thundersmp7.aternos.me");
   const username = data.botDetails[botId]?.owner;
   const botName = `SKYBOT_${botId}_${Math.floor(Math.random() * 9999)}`;
-  const bot = mineflayer.createBot({ host, port: parseInt(port || 25565), username: botName });
+  const bot = mineflayer.createBot({ host, port: parseInt(port || 54870), username: botName });
   activeBots[botId] = bot;
   botStatus[botId] = "Online";
 
